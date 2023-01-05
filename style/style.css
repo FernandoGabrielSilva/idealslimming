@@ -63,7 +63,7 @@ main {
 
 .container {
 	display: flex;
-	height: 40vh;
+	width: 100vw;
 	border: 2px solid blue;
 	border-radius: 10px;
 	flex-direction: column;
@@ -134,7 +134,7 @@ main {
 }
 
 #home div {
-	background-image: url('../img/depositphotos_107521942-stock-photo-fresh-fruits-and-vegetables-v3.jpg');
+	background-image: url('../img/WhatsApp\ Image\ 2023-01-05\ at\ 14.19.15-v3.jpeg');
 	background-repeat: no-repeat;
     margin-bottom: 200px;
     background-position: center;
@@ -143,19 +143,20 @@ main {
 }
 
 #home div:hover {
-	background-image: url('../img/depositphotos_107521942-stock-photo-fresh-fruits-and-vegetables-v2.jpg');
+	background-image: url('../img/WhatsApp\ Image\ 2023-01-05\ at\ 14.19.15-v2.jpeg');
 }
 
 #produtos div {
-	background-image: url('../img/depositphotos_108202776-stock-photo-notebook-on-wooden-table-v3.jpg');
+	background-image: url('../img/WhatsApp\ Image\ 2023-01-05\ at\ 14.53.26.jpeg');
 	background-repeat: no-repeat;
     margin-bottom: 200px;
     background-position: center;
     background-size: 100vw 100vh;
+	transition-duration: 400ms;
 }
 
 #produtos div:hover {
-	background-image: url('../img/depositphotos_108202776-stock-photo-notebook-on-wooden-table-v2.jpg');
+	background-image: url('../img/WhatsApp\ Image\ 2023-01-05\ at\ 14.53.26.jpeg');
 }
 
 #sobre div {
@@ -164,6 +165,7 @@ main {
     margin-bottom: 200px;
     background-position: center;
     background-size: 100vw 100vh;
+	transition-duration: 400ms;
 }
 
 #sobre div:hover {
