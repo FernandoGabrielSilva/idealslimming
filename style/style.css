@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color:  black;
+	color: white;
+}
+
+main {
+	background-color: black;
+	max-width: 90vw;
+	margin: auto;
+	border-radius: 10px;
+	height: 100vh;
+}
+
+.nav {
+	display: flex;
+	background-color: black;
+	color: white;
+	height: 80px;
+	align-items: center;
+}
+
+.nav h1 {
+	text-align: left;
+	margin-left: 30px;
+	font-size: 1.9em;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	cursor: default;
+}
+
+.nav ul {
+	display: flex;
+	font-size: 1.3em;
+	list-style: none;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100vw;
+	margin: auto;
+}
+
+.nav ul li {
+    text-align: center;
+    width: 200px;
+	font-family: 'Anton', sans-serif;
+	font-weight: 300;
+}
+
+.nav ul li a:hover {
+	color: blue;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: white;
+	transition-duration: 400ms;
+}
+
+.container {
+	display: flex;
+	height: 40vh;
+	border: 2px solid blue;
+	border-radius: 10px;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	transition-duration: 400ms;
+	padding: 0 25px;
+}
+
+.container:hover {
+	box-shadow: 0px 0px 30px blue;
+}
+
+#home,
+#produtos,
+#sobre {
+	display: flex;
+	height: 60vh;
+	margin-top: 200px;
+	cursor: default;
+}
+
+#home h2,
+#produtos h2,
+#sobre h2 {
+	margin-top: -50px;
+	margin-bottom: 50px;
+	font-size: 1.9em;
+	font-family: 'Anton', sans-serif;
+	font-weight: 300;
+}
+
+#home p,
+#produtos p,
+#sobre p {
+	font-size: 1.4em;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+
+#home a,
+#produtos a,
+#sobre a {
+	font-size: 1em;
+	margin-bottom: -52px;
+	margin-top: 37px;
+}
+
+#home button,
+#produtos button,
+#sobre button {
+	margin: 20px -1px;
+    padding: 10px 90px;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.7s;
+    border: 2px solid blue;
+}
+
+#home button:hover,
+#produtos button:hover,
+#sobre button:hover {
+    color: blue;
+    background-color: black;
+    border: 2px solid blue;
+    box-shadow: 0 0 40px blue;
+}
+
+#home div {
+	background-image: url('../img/depositphotos_107521942-stock-photo-fresh-fruits-and-vegetables-v3.jpg');
+	background-repeat: no-repeat;
+    margin-bottom: 200px;
+    background-position: center;
+    background-size: 100vw 100vh;
+	transition-duration: 400ms;
+}
+
+#home div:hover {
+	background-image: url('../img/depositphotos_107521942-stock-photo-fresh-fruits-and-vegetables-v2.jpg');
+}
+
+#produtos div {
+	background-image: url('../img/depositphotos_108202776-stock-photo-notebook-on-wooden-table-v3.jpg');
+	background-repeat: no-repeat;
+    margin-bottom: 200px;
+    background-position: center;
+    background-size: 100vw 100vh;
+}
+
+#produtos div:hover {
+	background-image: url('../img/depositphotos_108202776-stock-photo-notebook-on-wooden-table-v2.jpg');
+}
+
+#sobre div {
+	background-image: url('../img/emagrecimento-v3.jpg');
+	background-repeat: no-repeat;
+    margin-bottom: 200px;
+    background-position: center;
+    background-size: 100vw 100vh;
+}
+
+#sobre div:hover {
+	background-image: url('../img/emagrecimento-v2.jpg');
+}
