@@ -74,6 +74,7 @@ main {
     justify-content: center; */
 	transition-duration: 400ms;
 	/* padding: 0 25px; */
+	align-items: center;
 }
 
 .container_2 {
@@ -87,19 +88,33 @@ main {
 	transition-duration: 400ms;
 	/* padding: 0 25px; */
 	flex-direction: row-reverse;
+	align-items: center;
 }
 
-.img_1, 
+.img_1{
+	display: flex;
+	max-height: 370px;
+	/* max-width: 300px; */
+	border-radius: 10px;
+}
+
 .img_2 {
 	display: flex;
-	height: auto;
-	width: auto;
+	max-height: 450px;
+	/* max-width: 300px; */
+	border-radius: 10px;
+}
+
+.img_3 {
+	display: flex;
+	max-height: 300px;
+	/* max-width: 300px; */
 	border-radius: 10px;
 }
 
 .container div {
 	display: flex;
-	max-width: 100vh;
+	max-width: 100vw;
 	flex-direction: column;
     justify-content: center;
 	align-items: flex-start;
@@ -107,7 +122,7 @@ main {
 
 .container_2 div {
 	display: flex;
-	max-width: 100vh;
+	max-width: 100vw;
 	flex-direction: column;
     justify-content: center;
 	align-items: flex-start;
@@ -120,6 +135,10 @@ main {
 	height: 60vh;
 	margin-top: 200px;
 	cursor: default;
+}
+
+#sobre {
+	padding-bottom: 150px;
 }
 
 #home h2,
@@ -168,4 +187,763 @@ main {
     background-color: black;
     border: 2px solid green;
     box-shadow: 0 0 40px green;
+}
+
+@media screen and (max-width: 800px){
+	.nav h1 {
+		font-size: 1.7em;
+	}
+	
+	.nav ul {
+		font-size: 1.2em;
+		max-width: 80vw;
+	}
+
+	.img_1{
+		max-height: 370px;
+	}
+
+	.img_2 {
+		max-height: 450px;
+	}
+
+	.img_3 {
+		max-height: 300px;
+	}
+	
+	#home,
+	#produtos,
+	#sobre {
+		height: 40vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1.7em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 1.3em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 1em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 10px 45px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 750px){
+	main {
+		max-width: 100vw;
+		padding: 0 10px;
+	}
+
+	.nav h1 {
+		font-size: 1.6em;
+	}
+	
+	.nav ul {
+		font-size: 1.1em;
+		max-width: 80vw;
+	}
+
+	.img_1{
+		max-height: 370px;
+	}
+
+	.img_2 {
+		max-height: 450px;
+	}
+
+	.img_3 {
+		max-height: 300px;
+	}
+	
+	#home,
+	#produtos,
+	#sobre {
+		height: 40vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1.6em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 1.2em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 1em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 10px 45px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.nav h1 {
+		font-size: 1.5em;
+	}
+	
+	.nav ul {
+		font-size: 1.1em;
+		max-width: 70vw;
+	}
+
+	.img_1{
+		max-height: 370px;
+	}
+
+	.img_2 {
+		max-height: 450px;
+	}
+
+	.img_3 {
+		max-height: 300px;
+	}
+	
+	#home,
+	#produtos,
+	#sobre {
+		height: 40vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1.5em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 1.2em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 1em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 10px 45px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 675px){
+	.nav h1 {
+		font-size: 1.5em;
+	}
+	
+	.nav ul {
+		font-size: 1.1em;
+		max-width: 70vw;
+	}
+
+	.img_1{
+		max-height: 360px;
+	}
+
+	.img_2 {
+		max-height: 440px;
+	}
+
+	.img_3 {
+		max-height: 290px;
+	}
+	
+	#home,
+	#produtos,
+	#sobre {
+		height: 40vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1.5em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 1.2em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 1em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 10px 45px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 630px){
+	.nav h1 {
+		font-size: 1.4em;
+	}
+	
+	.nav ul {
+		font-size: 1.1em;
+		max-width: 70vw;
+	}
+
+	.img_1{
+		max-height: 360px;
+	}
+
+	.img_2 {
+		max-height: 440px;
+	}
+
+	.img_3 {
+		max-height: 290px;
+	}
+	
+	#home,
+	#produtos,
+	#sobre {
+		height: 40vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1.4em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 1.1em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 0.9em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 10px 35px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 606px){
+	.nav h1 {
+		font-size: 1.4em;
+	}
+	
+	.nav ul {
+		font-size: 1.1em;
+		max-width: 70vw;
+	}
+
+	.img_1{
+		max-height: 350px;
+	}
+
+	.img_2 {
+		max-height: 430px;
+	}
+
+	.img_3 {
+		max-height: 280px;
+	}
+	
+	#home,
+	#produtos,
+	#sobre {
+		height: 40vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1.3em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 1em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 0.9em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 10px 35px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 574px){
+	.nav h1 {
+		font-size: 1.4em;
+	}
+	
+	.nav ul {
+		font-size: 1.1em;
+		max-width: 70vw;
+	}
+
+	.img_1{
+		max-height: 330px;
+	}
+
+	.img_2 {
+		max-height: 410px;
+	}
+
+	.img_3 {
+		max-height: 260px;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1.2em;
+		padding: 10px 0;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 1em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 0.8em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 8px 30px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 537px){
+	.nav h1 {
+		font-size: 1.4em;
+	}
+	
+	.nav ul {
+		font-size: 1.1em;
+		max-width: 70vw;
+	}
+
+	.img_1{
+		max-height: 330px;
+	}
+
+	.img_2 {
+		max-height: 410px;
+	}
+
+	.img_3 {
+		max-height: 260px;
+	}
+	
+	#home,
+	#produtos,
+	#sobre {
+		height: 40vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1.1em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 1em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 0.8em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 8px 30px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 512px){
+	.nav h1 {
+		font-size: 1.4em;
+	}
+	
+	.nav ul {
+		font-size: 1.1em;
+		max-width: 70vw;
+	}
+
+	.img_1{
+		max-height: 300px;
+	}
+
+	.img_2 {
+		max-height: 390px;
+	}
+
+	.img_3 {
+		max-height: 240px;
+	}
+
+	#home,
+	#produtos,
+	#sobre {
+		height: 30vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 1em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 0.9em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 0.7em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 7px 25px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 468px){
+	.nav h1 {
+		font-size: 1.3em;
+	}
+	
+	.nav ul {
+		font-size: 1em;
+		max-width: 60vw;
+	}
+
+	.img_1{
+		max-height: 290px;
+	}
+
+	.img_2 {
+		max-height: 380px;
+	}
+
+	.img_3 {
+		max-height: 230px;
+	}
+
+	#home,
+	#produtos,
+	#sobre {
+		height: 30vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 0.9em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 0.8em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 0.7em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 7px 25px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
+}
+
+@media screen and (max-width: 438px){
+	.nav h1 {
+		font-size: 1.3em;
+	}
+	
+	.nav ul {
+		font-size: 1em;
+		max-width: 60vw;
+	}
+
+	.img_1{
+		max-height: 290px;
+	}
+
+	.img_2 {
+		max-height: 380px;
+	}
+
+	.img_3 {
+		max-height: 230px;
+	}
+
+	#home,
+	#produtos,
+	#sobre {
+		height: 30vh;
+	}
+
+	#home h2,
+	#produtos h2,
+	#sobre h2 {
+		font-size: 0.8em;
+	}
+
+	#home p,
+	#produtos p,
+	#sobre p {
+		font-size: 0.6em;
+		
+	}
+
+	#home a,
+	#produtos a,
+	#sobre a {
+		font-size: 0.5em;
+	}
+
+	#home button,
+	#produtos button,
+	#sobre button {
+		margin: 20px -1px;
+		padding: 6px 20px;
+		background-color: green;
+		cursor: pointer;
+		border-radius: 5px;
+		transition: 0.7s;
+		border: 2px solid green;
+	}
+
+	#home button:hover,
+	#produtos button:hover,
+	#sobre button:hover {
+		color: green;
+		background-color: black;
+		border: 2px solid green;
+		box-shadow: 0 0 40px green;
+	}
 }
