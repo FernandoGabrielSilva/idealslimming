@@ -1,15 +1,18 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 body {
-    background-image: url(https://media.istockphoto.com/id/1167050865/vector/black-background.jpg?s=612x612&w=0&k=20&c=wqZcwdLWq7DqZKz41vaBMVZhLtoqTbCpLaWO4HltAA8=);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    background-color: black;
 }
 
 main {
     max-width: 100vw;
     margin: auto;
+    background-image: url(https://media.istockphoto.com/id/1167050865/vector/black-background.jpg?s=612x612&w=0&k=20&c=wqZcwdLWq7DqZKz41vaBMVZhLtoqTbCpLaWO4HltAA8=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100vh;
+    margin-top: -50px;
 }
 
 .navSearch {
