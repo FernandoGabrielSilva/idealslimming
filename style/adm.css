@@ -1,0 +1,101 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, Verdana, Geneva, Tahoma, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Arial, Helvetica, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    color: white;
+}
+
+.title h2 {
+    margin-bottom: 5px;
+}
+
+fieldset{
+    margin: auto;
+    width: 80vw;
+    height: 75vh;
+    border: 3px solid dodgerblue;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.192);
+    margin-top: 20px;
+}
+
+legend {
+	color: white;
+	text-align: center;
+	font-size: 1.9em;
+    border: 1px solid linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    border-radius: 5px;
+}
+
+main {
+	padding: 10px 10px;
+}
+
+.card {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.lineInput {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-top: 2px;
+    padding: 10px;
+    background: none;
+    border: none;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 50%;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+button {
+    background-color: dodgerblue;
+    padding: 12px 55px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    transition: all ease 500ms;
+    font-size: 1em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0d62b5;
+}
+
+.content {
+    margin-top: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid dodgerblue;
+    width: 100%;
+/*    text-align: center;*/
+}
+
+table th {
+    background-color: #0d62b5;
+    padding: 4px;
+}
+
+table td img {
+    width: 25px;
+    align-content: center;
+    padding: 0 5px;
+}
+
+.center {
+    text-align: center;
+}

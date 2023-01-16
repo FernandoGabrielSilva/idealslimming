@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/css.css">
+    <link rel="stylesheet" href="../style/adm.css">
+    <script src="../js/script.js"></script>
+    <title>Area Administrativa</title>
+    <style>
+        ::-webkit-scrollbar-thumb {
+            background-color: dodgerblue;
+            border-radius: 20px;
+        }
+
+ /*       *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, Verdana, Geneva, Tahoma, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Arial, Helvetica, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        form {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.192);
+            border-radius: 20px;
+        }
+
+        fieldset{
+            margin: auto;
+            width: 80vw;
+            height: 75vh;
+            border: 3px solid dodgerblue;
+            padding: 20px;
+        }
+
+        legend {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 1.9em;
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            background-color: dodgerblue;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .imagem_div{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            margin-right: 50px;
+            margin-top: -160px;
+        }
+
+        .imagem_div div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+ 
+        .imagem_div div img {
+            margin-bottom: 10px;
+            border: 2px solid dodgerblue;
+            background-color: dodgerblue;
+            border-radius: 5px;
+            transition: 500ms;
+            max-width: 400px;
+        }
+
+        .inpuBox {
+            position: relative;
+        }
+
+        .InputNameProducts,
+        .InputDescricaoProducts,
+        .InputLinkPorduto {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 50%;
+            letter-spacing: 2px;
+            padding-top: 40px;
+        }
+
+        .labelInput_1 {
+            position: absolute;
+            top: 23.5%;
+            left: 10%;
+            font-size: 1.3em;
+            pointer-events: none;
+            transition: 500ms;
+            color: white;
+        }
+
+        .labelInput_2{
+            position: absolute;
+            top: 29.5%;
+            left: 10%;
+            font-size: 1.3em;
+            pointer-events: none;
+            transition: 500ms;
+            color: white;
+        }
+
+        .labelInput_3{
+            position: absolute;
+            top: 35.5%;
+            left: 10%;
+            font-size: 1.3em;
+            pointer-events: none;
+            transition: 500ms;
+            color: white;
+        }
+
+        .InputNameProducts:focus ~ .labelInput_1,
+        .InputNameProducts:valid ~ .labelInput_1{
+            top: 22%;
+            font-size: 16px;
+            color: dodgerblue;
+        }
+
+        .InputDescricaoProducts:focus ~ .labelInput_2,
+        .InputDescricaoProducts:valid ~ .labelInput_2 {
+            top: 28.1%;
+            font-size: 16px;
+            color: dodgerblue;
+        }
+
+        .InputLinkPorduto:focus ~ .labelInput_3,
+        .InputLinkPorduto:valid ~ .labelInput_3 {
+            top: 34%;
+            font-size: 16px;
+            color: dodgerblue;
+        }
+
+        #image {
+            display: none;
+        }
+
+        .UploadImage {
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
+            max-width: 250px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 500ms;
+        }
+
+        .UploadImage:hover {
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+        }
+
+        .button_add {
+            position: absolute;
+            top: 70%;
+            left: 70%;
+        }
+
+        .button {
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            padding: 15px 60px;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 500ms;
+        }
+
+        .button:hover {
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+        }
+*/
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <form action="../php/conexao.php" id="formProdutos" method="POST">
+            <fieldset>
+                <legend><br><strong>Area Administrativa</strong></br></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="name" class="InputNameProducts" required>
+                    <label for="nome" class="labelInput_1"><strong>Nome do Produto</strong></label> <br>
+                    <input type="text" name="descricao" id="descricao" class="InputDescricaoProducts" required>
+                    <label for="descricao" class="labelInput_2"><strong>Descrição do Produto</strong></label> <br>
+                    <input type="url" name="url" id="url" class="InputLinkPorduto" required>
+                    <label for="url" class="labelInput_3"><strong>Link do Produto</strong></label>
+                </div>
+                <div class="imagem_div">
+                    <div>
+                        <label for="image" class="UploadImage">Upload de Imagem</label>
+                        <input type="file" id="image" name="image">
+                        <img src="" alt="" id="preview-image">
+                    </div>
+                </div>
+                <div class="button_add">
+                    <button type="button" class="button" id="button">CADASTRAR</button>
+                </div>
+            </fieldset>
+        </form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script>
+            const input = document.querySelector('#image');
+            input.addEventListener('change', function(e) {
+                const tgt = e.target || window.event.srcElement;
+            
+            const files = tgt.files;
+            const fr = new FileReader();
+            
+            fr.onload = function () {
+                document.querySelector('#preview-image').src = fr.result;
+            }
+            
+            fr.readAsDataURL(files[0]);
+            });
+        </script>
+    </div> -->
+    <fieldset>
+        <legend>Area Administrativa</legend>
+
+        <main>
+            <div class="title">
+                <h2>Produtos</h2>
+                <span>Lista de Produtos da minha loja.</span>
+            </div>
+            <div class="card">
+                 <div class="lineInput">
+                    <label>Produto</label>
+                    <input type="text" id="produto" placeholder="Nome do Produto">
+                </div>
+                <div class="lineInput">
+                    <label>Descrição</label>
+                    <input type="text" id="descricao" placeholder="Descrição do Produto">
+                </div>
+                <div class="lineInput">
+                    <label>Link</label>
+                    <input type="text" id="url" placeholder="Link de Afiliado do Produto">
+                </div>
+                <button onclick="produto.salvar()">Salvar</button>
+                <button onclick="produto.cancelar()">Cancelar</button>
+            </div>
+
+            <div class="content">
+                <table border="1">
+                    <thead class="center">
+                        <th>ID</th>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Link</th>
+                        <th>Açoes</th>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </fieldset>
+
+</body>
+</html>
